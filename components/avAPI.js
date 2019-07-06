@@ -3,7 +3,7 @@ require("../server")
 const axios = require("axios");
 const apiKey = process.env.API_KEY;
 console.log(apiKey);
-console.log(process.env.API_KEY);
+console.log(process.env);
 
 function searchFlights(flightData, cb) {
 
