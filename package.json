@@ -1,0 +1,32 @@
+{
+  "name": "maverick",
+  "version": "1.0.0",
+  "description": "MedAire MedLink Proof of Concept App",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "server": "nodemon server.js",
+    "client": "npm start --prefix client",
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rolandtellez/project-maverick.git"
+  },
+  "keywords": [],
+  "author": "Jeff Raimundo",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rolandtellez/project-maverick/issues"
+  },
+  "homepage": "https://github.com/rolandtellez/project-maverick#readme",
+  "dependencies": {
+    "concurrently": "^4.1.1",
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "dotenv": "^8.0.0",
+    "nodemon": "^1.19.1"
+  }
+}
