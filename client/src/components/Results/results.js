@@ -8,27 +8,27 @@ class Results extends Component {
         return (
             <div className="container">
 
-            <div className="row">
-    
-                <div className="col">
-                    Flight Information
+                <div className="row">
+
+                    <div className="col">
+                        Flight Information
                 </div>
-    
-                <div className="col">
-                    Medical Kit Contents
+
+                    <div className="col">
+                        Medical Kit Contents
                 </div>
-    
-                <div className="col">
-                    Procedures
+
+                    <div className="col">
+                        Procedures
                 </div>
-    
+
+                </div>
+                <a href="/search">← Back to search</a>
             </div>
-    
-        </div>
-          );
+        );
 
     }
-  
+
 }
 
 export default Results;
