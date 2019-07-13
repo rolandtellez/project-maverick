@@ -1,8 +1,27 @@
 import React, { Component } from 'react';
 import "./search.css";
+// import API from "../utils/API";
+// import SearchBtn from "../Search/SearchBtn";
 
 
 class Search extends Component {
+
+    // state = {
+    //     airline: "",
+    //     flight: ""
+    //   };
+
+    // handleFormSubmit = event => {
+    //     event.preventDefault();
+    //     if (this.state.airline && this.state.flight) {
+    //       API.getFlightInfo({
+    //         airline: this.state.airline,
+    //         flight: this.state.flight
+    //       })
+    //         .then(res => this.loadInfo())
+    //         .catch(err => console.log(err));
+    //     }
+    //   };
 
     render() {
         return (
@@ -33,7 +52,7 @@ class Search extends Component {
                             <input type="text" className="form-control" id="flight-number" placeholder="----------------"/>
                         </div>
 
-                        <button type="submit" className="btn btn-secondary">Submit</button>
+                        <a class="btn btn-secondary" href="/Results" role="button" type="submit">Submit</a>
 
                     </form>
 
