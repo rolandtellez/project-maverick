@@ -10,15 +10,8 @@ app.use(express.urlencoded({ extended: false }));
 app.use(express.json());
 app.use(express.static("public"));
 
-app.get("/api/team", (req,res) => {
-    let team = [
-        {id: 1, firstName: "Jeff", lastName: "Raimundo"},
-        {id: 2, firstName: "Jon", lastName: "Jensen"},
-        {id: 3, firstName: "Randy", lastName: "Jones"},
-        {id: 4, firstName: "Roland", lastName: "Tellez"},
-    ];
-    res.json(team);
-});
+require("./routes/routes-API")(app);
+require("./controllers/medkit-controllers")
 
 
 
