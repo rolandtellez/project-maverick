@@ -2,8 +2,8 @@ import axios from "axios";
 
 export default {
   // Gets Flight Information
-  getFlightInfo: function(airline, flight) {
-    return axios.get("/api/flight" + airline + flight);
+  getFlightInfo: function(flightData) {
+    return axios.post("/api/flights", flightData);
   },
   // Gets Medical Kit Contents
   getMedContent: function(id) {
