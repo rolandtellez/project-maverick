@@ -8,7 +8,7 @@ const PORT = process.env.PORT || 7500;
 
 app.use(express.urlencoded({ extended: false }));
 app.use(express.json());
-app.use(express.static("public"));
+app.use(express.static("client/build"));
 
 require("./routes/routes-API")(app);
 require("./controllers/medkit-controllers")
