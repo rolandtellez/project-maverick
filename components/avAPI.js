@@ -7,9 +7,10 @@ console.log(apiKey);
 
 function searchFlights(flightData, cb) {
 
-    //let flightParameters = {};
+    let airline = filghtData.airline;
+    let flightNumber = flightdata.flightNumber;
 
-    axios.get("http://aviation-edge.com/v2/public/flights?key=" + apiKey + "&flightIata=ua445").then(function(response) {
+    axios.get("http://aviation-edge.com/v2/public/flights?key=" + apiKey + "&flightIata=ua1579").then(function(response) {
         console.log(response.data);
         //console.log(response.data[0].geography.latitude);
 
